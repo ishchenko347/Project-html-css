@@ -1,0 +1,614 @@
+/* тут все к первой странице */
+
+/* стиль текста */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.top_header {
+    width: 510px;
+    font-size: 64px; 
+    font-weight: 300;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    margin-bottom: 32px;
+}
+
+.text {
+    font-size: 16px; 
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+
+.top__text {
+    width: 425px;
+    margin-bottom: 71px;
+}
+
+.top__button {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 50px;
+    margin-bottom: 190px;
+}
+
+.heading {
+    font-size: 36px; 
+    font-weight: 300;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.catalog_header {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    padding-bottom: 14px;
+}
+
+.card__link {
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #5A98D0;
+    text-decoration: none;
+    padding-top: 29px;
+}
+
+/* тут блоки с первой страницы */
+
+.container { 
+    max-width: 1140px; 
+    margin: 0 auto; 
+}
+
+.top {
+    min-height: 768px;
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-top: 34px;
+}
+
+.top__box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.top_info {
+    padding-top: 107px;
+    flex-grow: 1;
+    background-image: url(img/top__back.svg);
+    background-repeat: no-repeat;
+    background-position: right 193px;
+    background-size: 44%;
+}
+
+.what_we_do {
+    padding-top: 64px;
+}
+
+.all_card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.card {
+    width: 359px;
+    padding: 44px 32px;
+    box-sizing: border-box; 
+    /* для того чтобы карточка не увеличилась в размерах при добавлении падинга */
+    background: #FFFFFF;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__img {
+    align-self: center;
+    padding-bottom: 51px;
+}
+
+.project {
+    text-align: center;
+}
+
+.project__text {
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 64px;
+    color: #222222;
+    opacity: 1;
+}
+
+.project__item {
+    position: relative;
+}
+
+.project__parent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.smartHome {
+    font-size: 32px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    position: absolute;
+    top: 64px;
+    right: 64px;
+    color: #FFFFFF;
+}
+
+.project__img {
+    width: 100%;
+}
+
+.project__parent_text{
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.footer {
+    background-color: #316099;
+    margin-top: 112px;
+}
+
+.footer_up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__heading {
+    max-width: 340px;
+    color: #FFFFFF;
+    padding-top: 91px;
+    padding-bottom: 32px;
+    text-align: left;
+}
+
+.footer__text {
+    max-width: 495px;
+    color: #FFFFFF;
+    padding-bottom: 96px;
+}
+
+.footer__button {
+    background: #5A98D0;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding: 15px 80px;
+    color: #FFFFFF;
+    display: block;
+}
+
+hr {
+    opacity: 0.4;
+    border: 1px solid #FFFFFF;
+}
+
+.footer_info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+}
+
+.footer__list {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    flex-grow: 1;
+    flex-basis: 33.3333%;
+    list-style-type: none;
+    display: flex;
+    margin-right: 32px;
+    padding-bottom: 64px;
+}
+
+.footer__list:first-child::before {
+    content: "A.";
+    display: block;
+    margin-right: 19px;
+}
+
+.footer__list:nth-child(2)::before {
+    content: "T.";
+    display: block;
+    margin-right: 19px;
+}
+
+.footer__list:last-child::before {
+    content: "E.";
+    display: block;
+    margin-right: 19px;
+}
+
+.watermark {
+    padding-bottom: 64px;
+    color: #FFFFFF;
+}
+
+/* тут все ко второй странице */
+
+.contactUs__top {
+    background-image: url(img/contact__back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 51px;
+    margin-top: 54px;
+}
+
+.contactUs_header {
+    font-weight: 500; 
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    padding-bottom: 16px;
+}
+
+.contactUs_text {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    padding-bottom: 49px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.contactUs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 57px;
+    padding-bottom: 96px;
+}
+
+.contact_info {
+    width: 301px;
+}
+
+.contactUs__img {
+    padding-bottom: 16px;
+}
+
+.contactUs__header_mini {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    padding-top: 40px;
+    padding-bottom: 24px;
+}
+
+.sendUsMessage__header_mini {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    padding-bottom: 24px;
+}
+
+.contact__img {
+    margin-right: 19px;
+}
+
+.address__text {
+    font-weight: 300;
+    letter-spacing: 0.04em;
+}
+
+.phone__text {
+    align-items: center;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    list-style-type: none;
+    line-height: 2;
+}
+
+.onlineService__text {
+    letter-spacing: 0.05em;
+    list-style-type: none;
+    line-height: 2;
+}
+
+.form {
+    background: #FFFFFF;
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    line-height: 70px; 
+    text-align: left; 
+    color: #5A98D0; 
+    box-sizing: border-box; 
+    padding: 56px;
+    margin-left: 101px;
+    width: 540px;
+}
+
+.your__info {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.8;
+    padding-top: 24px;
+}
+
+.message {
+    border: 1px solid #356EAD; 
+    box-sizing: border-box; 
+    border-radius: 10px; 
+    opacity: 0.4;
+    margin-top: 8px;
+    margin-bottom: 72px;
+    width: 428px;
+    height: 144px;
+    font-family: sans-serif;
+    font-size: 16px; 
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    padding-left: 43px;
+    padding-top: 21px;
+
+}
+
+.submit {
+    background: #5A98D0; 
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2); 
+    border-radius: 10px;
+    padding: 23px 183px;
+    font-weight: 500; 
+
+    font-size: 16px;
+    line-height: 26px; 
+    letter-spacing: 0.04em;
+    text-align: center; 
+    color: #FFFFFF; 
+    text-transform: uppercase;
+}
+
+.input {
+    border: 1px solid #356EAD; 
+    box-sizing: border-box; 
+    width: 428px;
+    height: 72px;   
+    border-radius: 10px; 
+    opacity: 0.4;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 16px; 
+    padding-left: 43px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+
+    .top__box {
+        background-position: right 280px;
+        padding-right: 32px;
+    }
+
+    .all_card {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 127px;
+    }
+
+    .card {
+        margin-bottom: 32px;
+    }
+
+    .footer__heading {
+        padding-top: 47px;
+    }
+
+    .footer__text {
+        max-width: 340px;
+        padding-bottom: 64px;
+    }
+
+    .footer_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer__list {
+        line-height: 26px;
+        padding-bottom: 26px;
+    }
+
+    .watermark {
+        padding-top: 38px;
+    }
+
+}
+
+@media (max-width: 667px) {
+
+    .container {
+        padding-right: 20px;
+        padding-left: 20px;
+    } 
+
+    .top {
+        min-height: 376px;
+    }
+
+    .header {
+        padding-top: 24px;
+    }
+
+    .top_info {
+        padding-top: 28px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+    }
+
+    .top_header {
+        width: 100%;
+        font-size: 32px;
+        line-height: 37px;
+        margin-bottom: 12px;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    .top__text {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .top__button {
+        font-size: 12px;
+        text-align: center;
+        padding: 4px 8px;
+        margin-bottom: 41px;
+    }
+
+    .what_we_do {
+        padding-top: 48px;
+    }
+
+    .heading {
+        font-size: 24px; 
+        line-height: 28px;
+        letter-spacing: 0em;
+    }
+
+    .card {
+        width: 337px;
+        padding: 41px 30px 26px 30px;
+    }
+
+    .all_card {
+        padding-bottom: 64px;
+    }
+
+    .card__link {
+        padding-top: 46px;
+    }
+
+    .project__text {
+        padding-bottom: 82px;
+    }
+
+    .project__parent {
+        flex-wrap: wrap;
+        margin-top: 17px;
+    }
+
+    .smartHome {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0em;
+        top: 16px;
+        right: 16px;
+    }
+
+    .project__img_margin {
+        padding-bottom: 16px;
+    }
+
+    .project__parent_text{
+        top: 16px;
+        left: 16px;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0em;
+    }
+
+    .footer {
+        margin-top: 64px;
+    }
+
+    .footer_up {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__heading {
+        padding-top: 18px;
+        text-align: center;
+    }
+
+    .footer__text {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .footer__button {
+        padding: 4px 8px;
+        margin-bottom: 41px;
+    }
+
+    .footer_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 32px;
+    }
+
+    .footer__list {
+        line-height: 19px;
+        padding-bottom: 18px;
+    }
+
+    .watermark {
+        padding-top: 19px;
+        padding-bottom: 32px;
+        text-align: center;
+    }
+    
